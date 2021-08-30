@@ -1,0 +1,299 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template
+% Version 0.1
+%
+% Original author:
+% SHLOK NANGIA
+%
+% Original repository:
+% https://github.com/shloknangia/OnePageResume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\RequirePackage[fixed]{fontawesome5}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{SHLOK}{NANGIA}{ % Your name
+{\fontsize{15pt}{15pt}\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont Software Engineer \& Proud Geek}\\
+%\urlstyle{same}\url{http://shloknangia.github.io} \\ % Your website, LinkedIn profile or other web address
+{\faEnvelope}\href{mailto:shloknangia@gmail.com}{shloknangia@gmail.com} | {\faPhone}+91-9953055177 | {\faLinkedin}\href{https://www.linkedin.com/in/shloknangia/}{shloknangia} | {\faGithub}\href{https://github.com/shloknangia}{shloknangia}% Your contact information
+}
+
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{\href{http://shloknangia.github.io}{\fontsize{30pt}{30pt}\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont SHLOK \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont NANGIA}} & \href{mailto:shloknangia@gmail.com}{shloknangia@gmail.com}\\
+%  \fontsize{15pt}{15pt}\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont SOFTWARE ENGINEER & +91-9953055177 \\
+%\end{tabular*}
+%\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+% \vspace{-15pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Delhi Technological \\University (Formerly DCE)}
+\descript{B. Tech Mathematics And Computing}
+\location{July 2018 | Delhi, IN \\Aggregate: \textbf{81.2\%}}
+\sectionsep
+
+\subsection{New Green Field School}
+\descript{AISSCE Class XII}
+\location{2014 | Delhi, IN \\Percentage: \textbf{94.4 (100 \% in Mathematics)}}
+\sectionsep
+
+\subsection{New Green Field School}
+\descript{AISSE Class X}
+\location{2012 | Delhi, IN \\CGPA: \textbf{9.4}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Facebook:// \href{https://facebook/abc}{\bf dd} \\
+%Github:// \href{https://github.com/abc}{\bf abc} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/abc}{\bf ABC} \\
+%YouTube://  \href{https://www.youtube.com/user/abc}{\bf ABC \\
+%Twitter://  \href{https://twitter.com/abc}{\bf @abc} \\
+%Quora://  \href{https://www.quora.com/abc}{\bf ABC}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+% \subsection{Programming}
+\location{Most Experience:}
+Angular \textbullet{}   C++ \textbullet{} Python \textbullet{} Javascript \textbullet{}\\
+Typescript \textbullet{} Git \textbullet{} VSTS \textbullet{} C \textbullet{} SQL \textbullet{}\\ 
+Agile Development \textbullet{} HTML \textbullet{} CSS \textbullet{} \\
+Bash \textbullet{} Data Structures \& Algo \\
+\location{Some Experience:}
+Java \textbullet{} .NET WEB API \textbullet{} Android SDK \textbullet{} Firebase \textbullet{} C\# \textbullet{} \LaTeX\  \\
+\location{Familiar:}
+MATLAB \textbullet{} SPSS 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{AWARDS}
+% \subsection{Graduate}
+\textbullet{} \location{First Position in Innovista Schlumberger
+2020} -Schlumberger, PuTC \\
+\textbullet{} \location{Reward of Excellence} -Schlumberger, PuTC \\
+\textbullet{} \location{First Position in Data Ecosystem
+Hackathon Schlumberger 2019} -Schlumberger, PuTC \\
+\textbullet{} \location{Third Position in Data science
+Hackathon 2019} -Schlumberger, PuTC \\
+\textbullet{} \location{Merit certificate issued for scoring 100/100
+marks in Mathematics in class XII} -Education Minister of Delhi \\
+\textbullet{} \location{Best Academic Student of Science} -NGFS, Saket \\
+%\location{Best Academic Student of Science
+%Streame}  NGFS, Saket \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Volunteering}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+%\begin{tightemize}
+\textbullet{} Active member of \textbf{Schlumberger Empowerment Team}. \\
+\textbullet{} Member of \textbf{Mathematics and Computing Society} of College (MACS). \\
+\textbullet{} Actively participated as \textbf{Council Member} in School Council year 2012-13 (Class XI). \\
+\textbullet{} Volunteered in a Project \textbf{“Helping youngsters to speak English”} in year 2010 - 2012 (Class IX \& X)
+%\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{SCHLUMBERGER, PUTC}
+\descript{| Software Engineer}
+\location{May, 2018 – Current | Pune, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+ \item Developing Web applications for \textbf{Data monitoring and visualization} based on Angular 2+ framework and INT Geotoolkit to deliver \textbf{real-time drilling data} to clients.
+ \item Designed and developed a responsive and \textbf{widget adaptable framework} which can be accessed on devices of all screen sizes i.e. Data visualization using widgets on Mobile devices
+ \item Designed \& developed angular application using \textbf{Module Federation} approach to support UI Micro Frontends
+ \item Tech Stack Using: Angular, .NET Web API and MongoDB
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BAR CODE INDIA LTD (BCIL)}
+\descript{| Android Developer Intern}
+
+\location{June, 2017 – July, 2017 | Faridabad, IN}
+\begin{tightemize}
+ \item Project on Android Based Application “Ride Share” where one could share its ride details and find a companion travelling in the same direction.
+ \item All code was reviewed, perfected, and pushed to production.
+ \item Tech Stack Using: JAVA, XML
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{INFOTEL BUSINESS  LTD}
+\descript{|  Android Developer Intern}
+\location{December, 2016 – January, 2017 | Gurugram, IN}
+\begin{tightemize}
+ \item Front End Android Application Developer for their running Application WTC (Warranty Tracker And Checker).
+ \item Tech Stack Using: JAVA, XML
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{NHPC LIMITED}
+\descript{|  Android Developer Intern}
+
+\location{June, 2016 – July, 2016 | Faridabad, IN}
+\begin{tightemize}
+ \item Project on Android Based Employee Search System where one could search employee details based on the combination of 5 fields.
+ \item Tech Stack Using: JAVA, XML
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{SMART SPEAKER}
+% \descript{| Researcher}
+\location{Jan 2014 – Jan 2015 | DTU, IN}
+ A type of \textbf{wireless speaker} and voice command device with an integrated tools and services that offers \textbf{interactive actions and hands-free activation} with the help of one "hot word" (or several "hot words"). The key features were \textbf{solving mathematical expressions, real-time object detection and Image captioning}.
+\begin{tightemize}
+ \item Uses MatBot API (Also developed by Me) to \textbf{solve Mathematical Queries}.
+ \item Developed an independent hardware using Raspberry Pi.
+ \item Developed an\textbf{ interface between the hardware and software} using secure shell access through laptop and later configured to acceptinputs by buttons.
+ \item Configured General Purpose Input/output pins on the raspberry pi which allowed to control the scripts by the simple press of a button.
+ \item Added \textbf{Text-to-speech and Speech-to-Text} capability for visually impaired people.
+\end{tightemize}
+\sectionsep
+%
+\runsubsection{MATBOT}
+% \descript{| Head Undergraduate Researcher}
+\location{Jan 2014 – Jan 2015 | DTU, IN}
+A python based assistant or bot which \textbf{solves mathematical expressions, interacts with a human} and support in their day-to-day tasks.
+\begin{tightemize}
+ \item developed Brain for MatBot using NLTK, Scikit on Python.
+ \item exposed engine via \textbf{web service based on Flask framework}.
+ \item developed MatBot interface on \textbf{Android mobile}.
+\end{tightemize}
+\sectionsep
+%
+\runsubsection{DTU CONNECT}
+% \descript{| Head Undergraduate Researcher}
+\location{Jan 2014 – Jan 2015 | DTU, IN}
+\begin{tightemize}
+ \item An Android application to find suitable \textbf{Blood Donors within the DTU Campus} in case of Accidents
+ \item Used JSON format to store information about Blood Donors of DTU.
+\end{tightemize}
+\sectionsep
+
+%\runsubsection{PORTFOLIO MANAGER}
+%% \descript{| Head Undergraduate Researcher}
+%% \location{Mar 2012 – May 2013 | Ithaca, NY}
+%\begin{tightemize}
+% \item An Android application to implement management of Stocks
+% \item Used SQLite for database management.
+% \item Shows current stock prices of Stocks with details.
+%\end{tightemize}
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
